@@ -112,3 +112,7 @@ fabric.properties
 *.iml
 out
 gen
+
+# Java Compiled output
+*.class
+out/*
