@@ -12,11 +12,11 @@ public class HelloWorld {
 //
 //        myString = 3.14159;
 
-//        long myNumber = 123L;
+        long myNumber = 123L;
 //        System.out.println(myNumber);
 
-        float myNumber = (float) 3.14;
-//        System.out.println(myNumber);
+        float myNumberFloat = (float) myNumber;
+        System.out.println(myNumberFloat);
 
 //        int x = 5;
 //        System.out.println(x++);
@@ -47,6 +47,13 @@ public class HelloWorld {
 //        System.out.println(c);
         d -= c;
 //        System.out.println(d);
-        
+
+        int myInteger = 900;
+        long morePrecise = myInteger;
+        System.out.println(morePrecise);
+
+        double pi = 3.14159;
+        int almostPi = (int) pi;
+        System.out.println(almostPi);
     }
 }
