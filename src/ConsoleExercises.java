@@ -8,6 +8,7 @@ public class ConsoleExercises {
 
         Scanner sc = new Scanner(System.in);
 
+
 //        System.out.print("Enter something: ");
 //        String userInput = scanner.next();
 //
@@ -42,6 +43,7 @@ public class ConsoleExercises {
         sc.nextLine();
 //        System.out.println("The total area is: " + totalArea);
         System.out.format("The total area of the classroom is %.2f", totalArea);
+
 
     }
 }
