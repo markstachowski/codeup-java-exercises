@@ -55,22 +55,22 @@ public class ControlFlowExercises {
 //        }
 
 
-        do {
-            System.out.print("Please enter and integer: ");
-            int inputInt = sc.nextInt();
-            sc.nextLine();
-            System.out.println("Here is your table!\n");
-            System.out.println("number | squared | cubed");
-            System.out.println("------ | ------- | -----");
-            for (int i = 1; i <= inputInt; i++) {
-            int squared = (int) Math.pow(i, 2);
-            int cubed = (int) Math.pow(i, 3);
-//                System.out.printf("%-6d | %-7d | %-6d%n", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
-                System.out.printf("%-6d | %-7d | %-6d%n", i, squared, cubed);
-            }
-            System.out.println("Continue? [y/N]");
-        } while (sc.next().equalsIgnoreCase("Y"));
-        sc.close();
+//        do {
+//            System.out.print("Please enter and integer: ");
+//            int inputInt = sc.nextInt();
+//            sc.nextLine();
+//            System.out.println("Here is your table!\n");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= inputInt; i++) {
+//            int squared = (int) Math.pow(i, 2);
+//            int cubed = (int) Math.pow(i, 3);
+////                System.out.printf("%-6d | %-7d | %-6d%n", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
+//                System.out.printf("%-6d | %-7d | %-6d%n", i, squared, cubed);
+//            }
+//            System.out.println("Continue? [y/N]");
+//        } while (sc.next().equalsIgnoreCase("Y"));
+//        sc.close();
 
         boolean userContinues = true;
         do {
