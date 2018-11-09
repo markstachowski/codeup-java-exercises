@@ -9,7 +9,7 @@ public class JavaStringBonuses {
     public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\nEnter a date (MM/DD/YYYY) in the date format converter application: \n");
+        System.out.println("\nEnter a date (MM/DD/YYYY) in the date format converter application:\n");
         DateFormat parseFormat = new SimpleDateFormat(
                 "MM/dd/yyyy");
         String inputDate = sc.nextLine();
@@ -21,7 +21,6 @@ public class JavaStringBonuses {
                 "MMMM dd, yyyy");
         String stringDate = dateFormat.format(date);
         System.out.println(stringDate);
-
 
     }
 }
