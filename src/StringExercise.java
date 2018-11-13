@@ -16,9 +16,12 @@ public class StringExercise {
 //        String message = "In windows, the main drive is usually C:\\";
 //        System.out.println(message);
 
-        String message = "I can do backslashes \\, double backslashes \\\\,\n" +
-                "and the amazing triple backslash \\\\\\!";
-        System.out.println(message);
+//        String message = "I can do backslashes \\, double backslashes \\\\,\n" +
+//                "and the amazing triple backslash \\\\\\!";
+//        System.out.println(message);
+//        int x = 5;
+//        System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+
 
     }
 }
