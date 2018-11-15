@@ -1,7 +1,6 @@
 package movies;
 
 import util.Input;
-//import java.util.Arrays; // uncomment for Bonus
 import java.util.Scanner;
 
 public class MoviesApplication {
@@ -20,24 +19,7 @@ public class MoviesApplication {
             }
         }
     }
-// BONUS: Add Movies and Categories.//////////////////////////////////////////////////
-//    public static String[] addMovie(String[] oldArray, String newMovie) {
-//        String[] newArray = Arrays.copyOf(oldArray, oldArray.length + 1);
-//        newArray[oldArray.length] = newMovie;
-//        return newArray;
-//    }
-//
-//    public static Movie newMovie(){
-//        Scanner sc = new Scanner(System.in);
-//        Input input = new Input(sc);
-//        System.out.print("Enter new movie name: ");
-//        input.getString();
-//        String name = input.getString();
-//        System.out.print("Enter new movie category: ");
-//        String category = input.getString();
-//        return (new Movie(name, category));
-//    }
-// Bonus ////////////////////////////////////////////////////////////////////////////
+
     public static void main(String[] args) {
 
         do {
