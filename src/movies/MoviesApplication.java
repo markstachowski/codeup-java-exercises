@@ -44,7 +44,7 @@ public class MoviesApplication {
             Scanner sc = new Scanner(System.in);
             Input input = new Input(sc);
             System.out.println("\nWhat would you like to do?\n" +
-                    "__________________________" +
+                    "__________________________\n" +
                     "\n" +
                     "0 - exit\n" +
                     "1 - view all movies\n" +
@@ -52,9 +52,9 @@ public class MoviesApplication {
                     "3 - view movies in the drama category\n" +
                     "4 - view movies in the horror category\n" +
                     "5 - view movies in the scifi category\n");
-
             System.out.print("Enter your choice: ");
             int choice = input.getInt();
+            System.out.println();
             switch (choice) {
                 case 0:
                     return;
