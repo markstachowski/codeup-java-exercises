@@ -3,10 +3,24 @@ package shapes;
 public class Rectangle extends Quadrilateral implements Measurable{
 
     public Rectangle(double length, double width) {
-        super(length, width);
+        super(length, width); //use super with anything that extends to reach what extends to
     }
+    @Override
     public void setLength(double length) { this.length = length; }
+    @Override
     public void setWidth(double width) { this.width = width; }
+// Getters
+    public double getArea() {
+        System.out.println("in Rectangle"); return this.length * this.width; }
+    public double getPerimeter() {
+        System.out.println("in Rectangle"); return 2 * this.length + 2 * this.width; }
+
+// Commented out old version here:
+    //    public Rectangle(double length, double width) {
+//        super(length, width);
+//    }
+//    public void setLength(double length) { this.length = length; }
+//    public void setWidth(double width) { this.width = width; }
 
 //    protected double width;
 //    protected double length;
@@ -15,14 +29,9 @@ public class Rectangle extends Quadrilateral implements Measurable{
 //        this.length = recWidth;
 //        this.width = recLength;
 //    }
-//    // Setters
+// Setters
 //    public void setLength(double length) { this.length = length; }
 //    public void setWidth(double width) { this.width = width; }
-//    // Getters
-//    public double getArea() {
-//        System.out.println("in Rectangle"); return this.length * this.width; }
-//    public double getPerimeter() {
-//        System.out.println("in Rectangle"); return 2 * this.length + 2 * this.width; }
 }
 
 
