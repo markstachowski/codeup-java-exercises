@@ -58,4 +58,25 @@ public class Input {
         }
     }
 
+// This section of Input Class is for Exceptions and Handling exercises only... Remember to uncomment out MovieApplication.java
+public int getInt(String s) {
+    try {
+        int inputString = Integer.valueOf(s);
+        return inputString;
+    } catch (NumberFormatException e) {
+        System.out.println("This is not a valid integer");
+    }
+    return 0;
+}
+
+    public double getDouble(String s) {
+        try {
+            Double inputString = Double.valueOf(s);
+            return inputString;
+        } catch (NumberFormatException e) {
+            System.out.println("This is not a valid double");
+        }
+        return 0;
+    }
+
 }

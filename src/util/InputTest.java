@@ -20,10 +20,16 @@ public class InputTest {
 //            System.out.println("Believe in yourself");
 //        }
 
-        System.out.println("Please enter a number between 1 and 3");
+//        System.out.println("Please enter a number between 1 and 3");
+//
+//        int userInt = input.getInt(1, 3);
+//        System.out.println("You chose " + userInt);
 
-        int userInt = input.getInt(1, 3);
-        System.out.println("You chose " + userInt);
+        System.out.println(input.getInt("999"));
+        System.out.println(input.getInt("cool"));
+
+        System.out.println(input.getDouble("9.99"));
+        System.out.println(input.getDouble("9.this"));
 
     }
 
