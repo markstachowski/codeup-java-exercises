@@ -19,13 +19,14 @@ public class Input {
     }
 
     public int getInt() {
-        if (!scanner.hasNextInt()) {
-            System.out.println("Not valid integer. Try again.");
-            scanner.nextLine();
+        int output;
+        try {
+            output = Integer.valueOf(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid integer. Please try again.");
             return getInt();
-        } else {
-            return scanner.nextInt();
         }
+        return output;
     }
 
     public int getInt(int min, int max) {
@@ -33,19 +34,20 @@ public class Input {
         if (userInt >= min && userInt <= max) {
             return userInt;
         } else {
-            System.out.println("Number out of range!");
+            System.out.println("Number out of range, try again...");
             return getInt(min, max);
         }
     }
 
     public double getDouble() {
-        if (!scanner.hasNextDouble()) {
-            System.out.println("Not valid integer. Try again.");
-            scanner.nextLine();
+        double output;
+        try {
+            output = Double.valueOf(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid integer. Please try again.");
             return getDouble();
-        } else {
-            return scanner.nextDouble();
         }
+        return output;
     }
 
     public double getDouble(int min, int max) {
@@ -58,25 +60,40 @@ public class Input {
         }
     }
 
-// This section of Input Class is for Exceptions and Handling exercises only... Remember to uncomment out MovieApplication.java
-public int getInt(String s) {
-    try {
-        int inputString = Integer.valueOf(s);
-        return inputString;
-    } catch (NumberFormatException e) {
-        System.out.println("This is not a valid integer");
-    }
-    return 0;
-}
-
-    public double getDouble(String s) {
+    public int getBinary() {
+        int output;
         try {
-            Double inputString = Double.valueOf(s);
-            return inputString;
+            output = Integer.valueOf(getString(), 2);
         } catch (NumberFormatException e) {
-            System.out.println("This is not a valid double");
+            System.out.println("Invalid binary number. Please try again.");
+            return getBinary();
         }
-        return 0;
+        return output;
     }
+
+    public int getHex() {
+        int output;
+        try {
+            output = Integer.valueOf(getString(), 16);
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid hexadecimal number. Please try again.");
+            return getHex();
+        }
+        return output;
+    }
+// Extra inputs
+    public int countVowels(String input) {
+        return input.replaceAll("[^aeiouAEIOU]", "").length();
+    }
+
+
+
+    public static void main(String[] args) {
+        Input in = new Input(new Scanner(System.in));
+        System.out.println("Please enter a number: ");
+        int userInt = in.getHex();
+        System.out.println(userInt);
+    }
+
 
 }

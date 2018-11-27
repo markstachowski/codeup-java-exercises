@@ -25,11 +25,7 @@ public class InputTest {
 //        int userInt = input.getInt(1, 3);
 //        System.out.println("You chose " + userInt);
 
-        System.out.println(input.getInt("999"));
-        System.out.println(input.getInt("cool"));
-
-        System.out.println(input.getDouble("9.99"));
-        System.out.println(input.getDouble("9.this"));
+        
 
     }
 
